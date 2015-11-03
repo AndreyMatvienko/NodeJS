@@ -1,0 +1,28 @@
+nav(class='navbar navbar-default')
+
+  div.container-fluid
+    div(class='collapse navbar-collapse' id='bs-example-navbar-collapse-1')
+      ul(class='nav navbar-nav')
+        li.active
+          a(href='#') Link
+            span.sr-only (current)
+        li
+          a(href='#') Link
+        li(class='dropdown hide')
+          a(href='#' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false') Dropdown
+            span.caret
+          - var dd_values = ['Action', 'Another action', 'omething else here'];
+
+          ul.dropdown-menu
+            each val in dd_values
+              li
+               a(href='#')= val
+
+            li(role='separator' class='divider')
+            li
+              a(href='#') Separated link
+            li(role='separator' class='divider')
+            li
+              a(href='#') One more separated link
+
+
